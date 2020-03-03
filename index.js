@@ -157,12 +157,12 @@ function aplicarFalta(nomeDoAluno) {
     }
 }
 
-
+//adicionei um segundo campo para poder adicionar uma nota ao aluno
 function aplicarNota(nomeDoAluno, notaDoAluno) {
     let encontrou;
     for (i = 0; i < alunosDaEscola.length; i++) {
         if (alunosDaEscola[i].nome == nomeDoAluno) {
-            //    encontrou = 1
+            encontrou = 1
             if (alunosDaEscola[i].cursos[0] != undefined) {
                 alunosDaEscola[i].notas.push(notaDoAluno);
                 console.log("-----------------------")
